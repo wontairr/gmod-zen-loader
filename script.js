@@ -46,6 +46,10 @@ videoLinks.forEach(link => {
 
 let duration = 0
 document.addEventListener("DOMContentLoaded",function(){
+    document.getElementById("window-controls-center").addEventListener("click",function() {
+        musicPlayer.src = audioLinks[audioIndex]
+    })
+
     video.addEventListener("click",function(event){
         video.src = videoLinks[(videoIndex + 1)%videoLinks.length]
     })
