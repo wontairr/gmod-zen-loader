@@ -111,7 +111,7 @@ body {
     background-color:rgba(0,0,0,0);
     top:0;
     left:0;
-    animation:fade 2s forwards;
+    animation:fade 2s ease-in-out forwards;
 }
 
 #loading-bar {

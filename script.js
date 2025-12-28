@@ -20,12 +20,12 @@ const audioLinks = [
 ]
 let audioIndex = 0
 const videoLinks = [
-    "assets/videos/creek.mp4",
-    "assets/videos/flower.mp4",
-    "assets/videos/rainleaf.mp4",
-    "assets/videos/jellyfish.mp4",
-    "assets/videos/lavender.mp4",
-    "assets/videos/rainleaf2.mp4"
+    "assets/videos/creek.webm",
+    "assets/videos/flower.webm",
+    "assets/videos/jellyfish.webm",
+    "assets/videos/flower2.webm",
+    "assets/videos/lavender.webm",
+    "assets/videos/rainleaf.webm"
 ]
 let videoIndex = Math.floor(Math.random() * videoLinks.length)
 
@@ -50,9 +50,6 @@ document.addEventListener("DOMContentLoaded",function(){
         musicPlayer.src = audioLinks[audioIndex]
     })
 
-    video.addEventListener("click",function(event){
-        video.src = videoLinks[(videoIndex + 1)%videoLinks.length]
-    })
     video.src = videoLinks[videoIndex]
     video.addEventListener("durationchange",function(event){
         console.log(video.duration)
@@ -77,9 +74,9 @@ document.addEventListener("DOMContentLoaded",function(){
         musicPlayer.src = audioLinks[audioIndex]
     })
     
-    function GameDetails( servername, serverurl, mapname, maxplayers, steamid, gamemode, volume, language ) {
-        mapName.textContent = mapname
-        serverName.textContent = servername
-        modeName.textContent = gamemode
-    }
 })
+function GameDetails( servername, serverurl, mapname, maxplayers, steamid, gamemode, volume, language ) {
+    mapName.textContent = mapname;
+    serverName.textContent = servername;
+    modeName.textContent = gamemode;
+}
