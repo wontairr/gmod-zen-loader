@@ -1,0 +1,154 @@
+
+@font-face {
+    font-family: 'Frutiger Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Frutiger Bold'), url('assets/Frutiger_bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica'), url('Helvetica.woff') format('woff');
+}
+
+body {
+    background-color:black;
+    overflow:hidden;
+}
+
+
+
+#bg-video {
+    width:100%;
+    height:100%;
+    filter:blur(10px) contrast(110%);
+    margin:0;
+    z-index:-1;
+}
+@keyframes whisp-top-anim {
+    0% {
+        transform:scaleY(110%)
+    }
+    50% {
+        transform:scaleY(100%)
+    }
+    100% {
+        transform:scaleY(110%)
+    }
+}
+
+.whisp {
+    z-index:1;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    mix-blend-mode: overlay;
+    animation:whisp-top-anim 10s ease-in-out infinite;
+}
+
+
+#whisp-top1 {
+    animation:whisp-top-anim 6.25s ease-in-out infinite;
+}
+#whisp-top2 {
+    animation:whisp-top-anim 8.1s ease-in-out infinite;
+}
+
+.loading-title {
+    position:absolute;
+    top:0;
+    left:10vw;
+    font-family:'Frutiger Bold',sans-serif;
+    color:white;
+    font-size:10vw;
+    mix-blend-mode: overlay;
+    text-shadow: 0 0 15px white;
+
+}
+.loading-title.under {
+    opacity:0.6;
+    text-shadow: 0 10 90px white;
+}
+
+@keyframes fade {
+    0% {
+        background-color: rgba(0,0,0,0);
+    }
+    50% {
+        background-color: rgba(0,0,0,1);
+    }
+    55% {
+        background-color: rgba(0,0,0,1);
+    }
+    100% {
+        background-color: rgba(0,0,0,0);
+    }
+}
+
+.transitioner {
+    position: fixed;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0);
+    top:0;
+    left:0;
+    animation:fade 2s forwards;
+}
+
+#loading-bar {
+    --height: 320px;
+
+    position:fixed;
+    left:100%;
+    transform:translateX(-419px);
+    top:calc(100% - var(--height));
+    width:410px;
+    height:var(--height);
+
+    background-color: rgb(255, 255, 255);
+    z-index:1;
+    opacity: 0.5;  
+    box-shadow: -5px 0px 5px rgba(0,0,0,0.5);
+    display:flex;
+    flex-direction: column-reverse;
+    border-radius: 6px 6px 0% 0%;
+}
+#gradient-bottom {
+    height:75px;
+    background:linear-gradient(to top,#FBFBFB,#D4D4D4);
+}
+#fake-window-controls {
+    height:25px;
+    background-image:url("assets/mac_top_pattern.png");
+    display:flex;
+    align-items: center;
+    border-radius: 6px 6px 0% 0%;
+    border-bottom:1px solid #A3A3A3;
+}
+
+#mac-buttons {
+    margin-left:8px;
+}
+
+#window-controls-center {
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+
+#mapName {
+    font-family:"Helvetica",Arial,sans-serif;
+    font-size:16px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+
+#gmod-logo {
+    margin:5px;
+    max-width: 20px;
+}

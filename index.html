@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+
+        <link rel="stylesheet" href="styles.css"/>
+
+    </head>
+    <body>
+        <video id="bg-video" autoplay loop muted>
+            <source src="https://www.pexels.com/download/video/20584448/" type="video/mp4"/>
+        </video>
+        <img src="assets/whisp_top1.png" class="whisp" id="whisp-top1"/>
+        <img src="assets/whisp_top2.png" class="whisp" id="whisp-top2"/>
+        <img src="assets/whisp_bottom.png" class="whisp"/>
+        <h1 class="loading-title">loading</h1>
+        <h1 class="loading-title under">loading</h1>
+        <div id="fader"></div>
+
+        <div id="loading-bar">
+            <div id="gradient-bottom"></div>
+            <div style="margin-top:auto; margin-bottom:auto;"></div>
+            <div id="fake-window-controls">
+                <img id="mac-buttons" src="assets/mac_buttons.png"/>
+                <div id="window-controls-center">
+                    <img id="gmod-logo" src="assets/gmod_logo.png"/>
+                    <span id="mapName">gm_construct</span>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
