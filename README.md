@@ -8,3 +8,9 @@
 - JanuszDariusz
 - u_9cem1stv4w
 - ghasoub
+
+## Background Music Credits:
+
+- Mom and Dad's Computer - Couch Meditation
+- Dirty River - so shiny
+- desert sand feels warm at night - 世界のビジョン
