@@ -1,5 +1,7 @@
-# W.I.P
 # Add a nice zen experience to your Garry's Mod loading screen.
+
+## [Try it out!](https://wontairr.github.io/gmod-zen-loader/)
+![Demonstration Image](https://i.imgur.com/Psd7RZy.png)
 
 ## Background Video Credits:
 
