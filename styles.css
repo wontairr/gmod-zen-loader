@@ -119,9 +119,9 @@ body {
 
     position:fixed;
     left:100%;
-    transform:translateX(-419px);
+    transform:translateX(-410px);
     top:calc(100% - var(--height));
-    width:410px;
+    width:401px;
     height:var(--height);
 
     background-color: rgb(255, 255, 255);

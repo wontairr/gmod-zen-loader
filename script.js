@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded",function(){
     
 })
 function GameDetails( servername, serverurl, mapname, maxplayers, steamid, gamemode, volume, language ) {
-    mapName.textContent = mapname;
+    mapName.textContent = "Map: ".concat(mapname);
+    modeName.textContent = "Mode: ".concat(gamemode);
     serverName.textContent = servername;
-    modeName.textContent = gamemode;
 }
