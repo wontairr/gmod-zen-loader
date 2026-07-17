@@ -16,3 +16,6 @@
 - Mom and Dad's Computer - Couch Meditation
 - Dirty River - so shiny
 - desert sand feels warm at night - 世界のビジョン
+
+## License
+This project is under the MIT License.
